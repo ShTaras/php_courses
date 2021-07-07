@@ -17,18 +17,6 @@ function calc($cost, $maxPayment, $percent,$commission, $firstPay=0 )
         $totalLoss += $loss;
         $mountPayment = $maxPayment - $loss;
         $cost -= $mountPayment;
-
-        // echo 'month-', $month;
-        // echo '<br>';
-        // echo 'mount poumnet-', $mountPayment;
-        // echo '<br>';
-        // echo 'loss-', $loss;
-        // echo '<br>';
-        // echo 'cost-  ', $cost;
-        // echo '<br>';
-        // echo "Total spent - ", $totalLoss + $startPrice;
-        // echo '<br>';
-        // echo '<br>';
         $month++;
     }
     echo "Mounth - ", $month;
